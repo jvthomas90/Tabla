@@ -1,0 +1,100 @@
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+/**
+table#defaultCommands tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+**/
+
+.userConfig {
+    margin-left: 25px;
+    font-size: 120%
+}
+
+.generalDirections {
+    margin-left: 25px;
+    font-size: 120%
+}
+
+input[name='options'] {
+    margin-left: 25px;
+}
+
+ul {
+    margin-left: 25px;
+    padding-left: 0;
+    list-style: none;
+}
+
+td.command {
+    /*padding-left: 25px;*/
+    padding-right: 5px;
+    text-align: right;
+}
+
+a {
+    color: #0060B6;
+}
+
+#all-keyboard-shtcts-cell {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inequality-sign {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+#loseFocusCheckBoxSpan {
+    padding-left: 50px;
+    position: relative;
+    top: 1px;
+}
+
+#shrinkpercentage {
+    width: 30px;
+    text-align: right;
+    font-weight: bolder;
+}
+
+#contact {
+    padding-top: 50px;
+    position: fixed;
+    bottom: 10;
+    right: 10;
+}
+
+/* Form */
+#form {
+    overflow: hidden;
+    max-width: 400px;
+}
+
+#patterns {
+    color: #333333;
+    font-size: 1.0em;
+    height: 150px;
+    max-width: 380px;
+    width: 300px;
+}
+
+#reset {
+    float: right;
+}

@@ -1,0 +1,67 @@
+{
+	"name": "Tabla: Tame your tabs à la...",
+	"short_name": "Tabla",
+	"description": "Tools, tricks and techniques to triage through tabs",
+	"version": "0.9",
+	"manifest_version": 2,
+	"icons": {
+		"256": "tabla.png"
+	},
+    "offline_enabled": true,
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "activeTab",
+        "background",
+        "storage",
+        "contextMenus"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "override/notepad.html"
+    },
+    "options_ui":{
+        "page": "options.html",
+        "open_in_tab": false
+    },
+	"background": {
+        "page": "stage_scripts.html"
+	},
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "keyboard_control/content_script/inject.js",
+                "context_menus/open_selected_URLs/v2beta/content_script.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_title": "1) Tap Tabla\n2)SHIFT select links\n\n3)There is no step 3!"
+    },
+	"commands": {
+		"new-tab-here": {
+			"suggested_key": {
+				"default": "Alt+T",
+				"mac": "MacCtrl+T"
+			},
+			"description": "Open a new tab next to the current one"
+		},
+        "move-tabs-left": {
+            "description": "Move highlighted tabs to the left",
+            "suggested_key": {
+                "default": "Ctrl+Shift+Left",
+                "mac": "MacCtrl+Shift+Left"
+            }
+        },
+        "move-tabs-right": {
+            "description": "Move highlighted tabs to the right",
+            "suggested_key": {
+                "default": "Ctrl+Shift+Right",
+                "mac": "MacCtrl+Shift+Right"
+            }
+        }
+    }
+}

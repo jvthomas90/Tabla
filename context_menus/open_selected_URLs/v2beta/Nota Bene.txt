@@ -1,0 +1,13 @@
+I'm tossing the implementation source-files of this second iteration in a separate "beta-version" sub-folder
+ONLY because I think there is a lot of room for improvement. 
+
+Technically speaking, it works. I can multi-select several links by holding down SHIFT and dragging... but it's
+ALWAYS ON. I **had to** explicitly declare the content script in the manifest.json file.
+
+Not sure why the if-else if-else conditional statement in the background.js file isn't triggering the 
+content_script.js dynamically... but the fact that my IDE isn't flagging any issues and the errors are only
+being generated on Chrome when I manually invoke the "browser_action" means this likely isn't a problem with my
+novice grasp on javascript but rather a quirk of chrome ¯\_(ツ)_/¯
+
+@TODO: Conduct further research regarding Chrome's expectations on how to properly inject/execute JS dynamically
+@NOTE: This probably doesn't belong in the "context menu" folder any longer either... unless I can get v1 working
