@@ -2,7 +2,7 @@
 	"name": "Tabla: Tame your tabs à la...",
 	"short_name": "Tabla",
 	"description": "Tools, tricks and techniques to triage through tabs",
-	"version": "0.9",
+	"version": "0.9.1",
 	"manifest_version": 2,
 	"icons": {
 		"256": "tabla.png"
@@ -19,6 +19,9 @@
     ],
     "chrome_url_overrides": {
         "newtab": "override/notepad.html"
+    },
+    "omnibox":{
+        "keyword":"tabla"
     },
     "options_ui":{
         "page": "options.html",
@@ -61,6 +64,20 @@
             "suggested_key": {
                 "default": "Ctrl+Shift+Right",
                 "mac": "MacCtrl+Shift+Right"
+            }
+        },
+        "move-tabs-between-windows": {
+            "description": "Move tabs between windows",
+            "suggested_key": {
+                "default": "Ctrl+Shift+M",
+                "mac": "MacCtrl+Shift+M"
+            }
+        },
+        "move-tabs-between-windows": {
+            "description": "Move tabs between windows",
+            "suggested_key": {
+                "default": "Ctrl+Shift+M",
+                "mac": "MacCtrl+Shift+M"
             }
         }
     }
